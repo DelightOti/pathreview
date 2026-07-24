@@ -30,7 +30,7 @@ contribution to a larger codebase.
 
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** 
+**Reproduction commit link:** [https://github.com/DelightOti/pathreview/commit/b995ff04b624d17a9d116697a75e0bf796597894]
 
 **Reproduction summary:**  
 I activated the project’s virtual environment and ran `python -m pytest tests/unit/test_readme_scorer.py -q`. The test suite produced 1 failed test and 22 passing tests. The failing test expected the README fixture to contain more than 100 words, but the scorer counted only 51 words and categorized it as `minimal`.
