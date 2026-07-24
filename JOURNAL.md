@@ -27,3 +27,15 @@ contribution to a larger codebase.
 **Setup confirmation:** [x] App runs locally at localhost:5173
 
 **Cohort ledger:** [x] Issue added to cohort ledger
+
+## Week 8 — Reproduction & solution planning
+
+**Reproduction commit link:** 
+
+**Reproduction summary:**  
+I activated the project’s virtual environment and ran `python -m pytest tests/unit/test_readme_scorer.py -q`. The test suite produced 1 failed test and 22 passing tests. The failing test expected the README fixture to contain more than 100 words, but the scorer counted only 51 words and categorized it as `minimal`.
+
+**PLAN.md link:** (https://github.com/DelightOti/pathreview/blob/test/156-readme-scorer-fixture/PLAN.md)
+
+**Blockers or open questions:**  
+I still need to confirm whether the maintainers prefer expanding the README fixture to more than 500 words or changing the expected category. Based on the test name and existing category tests, expanding the fixture appears to match the intended behavior.
