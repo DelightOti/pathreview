@@ -39,3 +39,6 @@ I activated the project’s virtual environment and ran `python -m pytest tests/
 
 **Blockers or open questions:**  
 I still need to confirm whether the maintainers prefer expanding the README fixture to more than 500 words or changing the expected category. Based on the test name and existing category tests, expanding the fixture appears to match the intended behavior.
+
+**Blockers:**
+Before making my changes, I ran `make check`. It failed with 182 pre-existing lint errors across unrelated files. I will rerun it after my changes to confirm that I did not introduce any new failures.
