@@ -42,3 +42,45 @@ I still need to confirm whether the maintainers prefer expanding the README fixt
 
 **Blockers:**
 Before making my changes, I ran `make check`. It failed with 182 pre-existing lint errors across unrelated files. I will rerun it after my changes to confirm that I did not introduce any new failures.
+
+## Week 9 — Solution building & PR submission
+
+### Check-in 1 (mid-week)
+
+**Current progress:**
+I reproduced issue #156 and updated the README scorer test fixture so that it
+contains enough realistic content to satisfy the intended word-count threshold.
+I also updated the related unit test annotations and confirmed that the focused
+README scorer tests pass.
+
+**Next steps:**
+Request peer or mentor feedback on the pull request, address any relevant
+feedback, confirm that my changes introduce no new failures, and finalize the
+submission.
+
+**Blockers:**
+The repository already had pre-existing lint errors and failing unit tests
+unrelated to my issue. I documented the existing failures and compared the
+results before and after my changes.
+
+---
+
+### Check-in 2 (end of week)
+
+**PR link:** https://github.com/ascherj/pathreview/pull/610
+
+**Branch:** `test/156-readme-scorer-fixture`
+
+**What you built:**
+I expanded the README fixture used by the comprehensive README scorer test so
+that it contains enough meaningful content to meet the scorer’s word-count
+expectation. This fixes the test data without changing the production README
+scorer logic.
+
+**Tests added or updated:**
+Updated `tests/unit/test_readme_scorer.py`. The focused failing test now passes,
+and the complete README scorer test file passes with 23 tests.
+
+**Self-review confirmation:** [x] make check introduces no new failures  [x] make test-unit introduces no new failures
+
+**Draft PR feedback received from:** none yet
