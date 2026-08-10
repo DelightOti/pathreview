@@ -84,3 +84,44 @@ and the complete README scorer test file passes with 23 tests.
 **Self-review confirmation:** [x] make check introduces no new failures  [x] make test-unit introduces no new failures
 
 **Draft PR feedback received from:** none yet
+
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [x] No — still awaiting review
+
+**Summary of feedback:**
+I did not receive any reviewer feedback. My PR is still open, but there have not been any reviews or comments from maintainers yet.
+
+**How you responded:**
+Since I did not receive any feedback, I did not have any changes or responses to make.
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+One thing that was harder than I expected was figuring out what was actually causing the test to fail. At first, I thought there might be something wrong with the README scorer itself, but after looking through the test and the scoring requirements more closely, I realized the problem was actually the test fixture. The README in the test only had 51 words, even though the test expected it to be scored as comprehensive.
+
+Another difficult part was running tests and seeing a lot of errors that had nothing to do with my changes. The repo already had 182 lint errors and 53 failing unit tests before I made my fix, so I had to make sure I was not accidentally blaming my work for problems that were already there.
+
+**What did you learn about working in a large codebase?**
+I learned that working in someone else's codebase is very different from working on my own projects. I could not just jump in and change whatever looked wrong. I had to understand how the scorer worked, how the test was supposed to work, and what the original developer was trying to test.
+
+I also learned that sometimes the best fix is actually a small one. For this issue, I did not need to change the README scorer logic at all. I just needed to update the test fixture so it actually matched what the test expected. After I made the change, the focused test passed and all 23 tests in the README scorer test file passed.
+
+**How did AI tools help — and where did they fall short?**
+AI helped me a lot with understanding the repo, figuring out what different parts of the code were doing, and helping me troubleshoot errors. It was also useful for Git commands and for helping me understand some of the testing output when I was unsure what it meant.
+
+At the same time, I learned that I could not just trust everything AI suggested. Sometimes I still had to go back into the code myself and check whether the explanation actually made sense. AI also could not automatically tell me which errors were already in the repo and which ones came from my own changes. I still had to test things myself and compare the results.
+
+**What would you do differently if you started over?**
+If I started over, I would probably spend more time testing the repo before changing anything. I would run the exact failing test first, then the related test file, and write down what was already failing before I touched the code. That would have made it easier later when I was trying to figure out if I caused any new problems.
+
+I also would have looked at the test fixture and the word-count requirement side by side earlier. Once I realized the fixture only had 51 words, the issue became a lot more obvious.
+
+**What are you most proud of from this module?**
+I am most proud that I was able to work through an actual issue in a codebase that I was not familiar with. I was able to reproduce the problem, figure out what was causing it, make a fix, and test it to make sure it worked.
+
+I also feel more comfortable now with using Git, working on a branch, making commits, opening a pull request, and reading through code that I did not write myself. Even though my change was not huge, I feel like I understand the open-source contribution process a lot better now.
